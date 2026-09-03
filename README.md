@@ -1,6 +1,9 @@
 # AWS-Two-Tier-Web-Application
 A two-tier web application deployed on AWS using separate EC2 instances for the Apache/PHP web server and MySQL database, featuring secure connectivity and a PHP-based guestbook application.
 # Project Objectives
+
+![Uploading ChatGPT Image Aug 30, 2026, 12_50_18 PM.png…]()
+
 .To deploy a two-tier web application using two separate AWS EC2 instances.
 
 .To configure one EC2 instance as an Apache/PHP Web Server.
