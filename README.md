@@ -1,7 +1,8 @@
 # AWS-Two-Tier-Web-Application
 A two-tier web application deployed on AWS using separate EC2 instances for the Apache/PHP web server and MySQL database, featuring secure connectivity and a PHP-based guestbook application.
 # Project Objectives
-![Uploading VPC Design (2).jpg…]()<img src="YOUR_IMAGE_URL" alt="VPC Design" width="900"> 
+
+<img width="1536" height="1024" alt="ChatGPT Image Aug 30, 2026, 12_50_18 PM" src="https://github.com/user-attachments/assets/56076e7e-39e2-46c4-b8ff-b8d5e58aa80e" />
 
 .To deploy a two-tier web application using two separate AWS EC2 instances.
 
