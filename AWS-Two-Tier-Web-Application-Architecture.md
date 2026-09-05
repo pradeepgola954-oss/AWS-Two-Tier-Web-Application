@@ -48,4 +48,18 @@ SELECT * FROM guestbook;
 
 ► After reviewing all the settings, I clicked **“Launch Instance”** to create and start the web server.
 
+ ## Step 2: Connecting to the Web Server via SSH ##
+
+ <img width="1920" height="1080" alt="Web-Server-CMD-6" src="https://github.com/user-attachments/assets/6db65077-1c64-42d8-ac09-2c0698fd5878" />
+
+ ► First, I opened the local terminal, navigated to the folder containing my private key, and connected to the **Web Server** using its public IP address.
+
+ ```bash
+cd Downloads
+ssh -i "Key-Pair-Project.pem" ec2-user@13.200.237.180
+```
+
+
+ 
+
 
