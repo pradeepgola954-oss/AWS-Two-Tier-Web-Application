@@ -119,6 +119,19 @@ mysql -V
 systemctl start mysqld
 systemctl status mysqld
 ```
+# Step 8: Finding the Temporary Password and Logging In
+
+► MySQL creates a temporary password during installation. I used the tail command to find it in the log file.
+
+**SSH Command:**
+```bash
+tail /var/log/mysqld.log
+```
+► After finding the password in the logs, I used it to log in to MySQL for the first time.
+
+```bash
+mysql -u root -p
+```
 
 
 
