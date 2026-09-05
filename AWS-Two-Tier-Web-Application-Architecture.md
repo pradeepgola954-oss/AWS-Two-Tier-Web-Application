@@ -113,7 +113,7 @@ systemctl enable httpd
 cd /var/html/
 vi dbtest.php
 ```
-## Step 7: Configuring Database Connection (dbtest.php) ##
+## Step 18: Configuring Database Connection (dbtest.php) ##
 
 <img width="1920" height="1080" alt="Web-Server-CMD-9" src="https://github.com/user-attachments/assets/91b65c71-b811-4c47-bf18-b6657e9f1c7c" />
 
@@ -129,6 +129,54 @@ $database = "myDatabase";
 $pdo = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
+```
+
+## Step 19: Creating the Frontend Guestbook Interface (index.php) ##
+
+<img width="1920" height="1080" alt="Web-Server-CMD 10 -1" src="https://github.com/user-attachments/assets/6c511fae-79f6-4fed-87c0-eeb5db079c4c" />
+
+
+► Next, I used the vi index.php command to create the main webpage file. This file uses the PDO database connection from dbtest.php and performs two main functions:
+
+1. Saving Data: It accepts the user's Name and Message from the web form and securely inserts the data into the guestbook table in the MySQL database.
+   
+2. Displaying Data: It retrieves the saved records from the guestbook table and dynamically displays them on the webpage.
+
+```bash
+<?php
+include 'dbtest.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+
+    $stmt = $pdo->prepare("INSERT INTO guestbook (name, message) VALUES (?, ?)");
+    $stmt->execute([$name, $message]);
+}
+?>
+
+<!DOCTYPE TYPE html>
+<html>
+<head>
+    <title>Guestbook</title>
+</head>
+<body>
+    <h2>Guestbook</h2>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        Name: <input type="text" name="name"><br><br>
+        Message: <textarea name="message" rows="5" cols="40"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <h2>Messages</h2>
+    <?php
+    $stmt = $pdo->query("SELECT name, message FROM guestbook");
+    while ($row = $stmt->fetch()) {
+        echo "<b>" . $row['name'] . "</b><br>";
+        echo $row['message'] . "<br><br>";
+    }
+    ?>
+</body>
+</html>
 ```
 
 
