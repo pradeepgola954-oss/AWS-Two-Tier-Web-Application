@@ -78,7 +78,7 @@ php -v
 ```
 ## ► The output successfully showed PHP 8.1.34 was active on the server. ##
 
-# Step 15: Installing MySQL Database Extension for PHP
+## Step 15: Installing MySQL Database Extension for PHP ##
 
 <img width="1920" height="1080" alt="Wev-Server-CMD-7" src="https://github.com/user-attachments/assets/9a4660a4-2aa7-4abc-b915-c925f012aed2" />
 
@@ -86,6 +86,22 @@ php -v
 
 ```bash
 dnf install php8.1-mysqlnd.x86_64 -y
+```
+## Step 5: Managing Application Services ##
+
+► Next, I started the PHP-FPM service and checked its status to confirm that it was running properly.
+
+```bash
+systemctl start php-fpm
+systemctl status php-fpm
+```
+► The terminal output confirmed that the service was active (running).
+
+► I then started the Apache (httpd) web server and enabled it to start automatically when the system boots.
+
+```bash
+systemctl start httpd
+systemctl enable httpd
 ```
 
 
