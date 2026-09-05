@@ -64,6 +64,21 @@ ssh -i "Key-Pair-Project.pem" ec2-user@13.200.237.180
 ```bash
 sudo -i
 ```
+## Step 14: Installing PHP 8.1 and Apache Web Server ##
+
+► I used the package manager to install PHP 8.1 along with the Apache (httpd) web server.
+
+ ```bash
+dnf install php8.1 -y
+```
+► To verify that PHP was installed correctly, I checked the installed PHP version in the terminal.
+
+```bash
+php -v
+```
+## ► The output successfully showed PHP 8.1.34 was active on the server. ##
+
+
 
  
 
