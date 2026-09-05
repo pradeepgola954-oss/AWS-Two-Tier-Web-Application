@@ -8,3 +8,10 @@
 ```bash
 CREATE USER 'Prince'@'%' IDENTIFIED BY 'Pradeep@123';
 ```
+► I gave the new user full access to myDatabase and refreshed the permissions.
+
+```bash
+GRANT ALL PRIVILEGES ON myDatabase.* TO 'Prince'@'%';
+FLUSH PRIVILEGES;
+```
+# Step 12: Verifying Permissions and Table Status
