@@ -215,6 +215,43 @@ SSH (Port 22): The source was restricted to My IP, allowing only my local comput
 
 ► Finally, I reviewed the configuration and clicked Create security group, establishing a secure network-security foundation for the project.
 
+**Testing and Verification**
+
+► To test the application, I opened a web browser and navigated to the **Web Server's public IP address**. This allowed me to verify that the web server was accessible and that the application was successfully deployed.
+
+<img width="1920" height="1080" alt="Finnal-test-1" src="https://github.com/user-attachments/assets/570bce23-b9de-4140-be80-0d5df3c780e1" />
+
+<img width="1920" height="1080" alt="Finnal-Test-2" src="https://github.com/user-attachments/assets/753fcc71-238f-4922-96ca-9e8e001e18e9" />
+
+```bash
+http://13.200.237
+```
+► The **Guestbook** web interface loaded successfully. I entered several test names and messages, such as **“Pradeep Kumar,” “AWS Cloud Engineer,”** and **“AWS Cloud + Digital Skills,”** into the form and clicked **Submit**.
+
+► The webpage refreshed successfully and dynamically displayed the newly submitted entries under the **Messages** section, confirming that the application was processing and displaying user input correctly.
+
+► Finally, I logged back into the **Database-Server** terminal to verify that the web application was successfully communicating with the MySQL database. I ran the following query to retrieve all records from the `guestbook` table:
+
+```sql
+SELECT * FROM guestbook;
+```
+
+► The query returned the submitted records, confirming that the data entered through the web interface was successfully stored in the backend MySQL database.
+
+<img width="1920" height="1080" alt="Finnal-CMD-Test" src="https://github.com/user-attachments/assets/92ae7cd2-9eee-46bd-bff3-f5da1dd18f33" />
+
+```bash
+mysql -u root -p
+USE myDatabase;
+SELECT * FROM guestbook;
+```
+
+
+
+
+
+
+
 
 
 
