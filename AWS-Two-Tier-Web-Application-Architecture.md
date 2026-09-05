@@ -26,3 +26,5 @@ SHOW GRANTS FOR 'Prince'@'%';
 ```bash
 SELECT * FROM guestbook;
 ```
+ # Deployment Guide: AWS Two-Tier Web Application
+ **Phase 1: Launching the Frontend Web Server**
