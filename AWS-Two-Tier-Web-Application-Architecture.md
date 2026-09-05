@@ -78,6 +78,17 @@ php -v
 ```
 ## ► The output successfully showed PHP 8.1.34 was active on the server. ##
 
+# Step 15: Installing MySQL Database Extension for PHP
+
+<img width="1920" height="1080" alt="Wev-Server-CMD-7" src="https://github.com/user-attachments/assets/9a4660a4-2aa7-4abc-b915-c925f012aed2" />
+
+► To connect the frontend application to the backend database, I installed the PHP-MySQL extension.
+
+```bash
+dnf install php8.1-mysqlnd.x86_64 -y
+```
+
+
 
 
  
