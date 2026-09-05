@@ -98,6 +98,18 @@ rm -rf /var/cache/dnf
 ```bash
 dnf install mysql-community-server -y
 ```
+# Step 6: Verifying the Installation
+<img width="1920" height="1080" alt="CMD-3" src="https://github.com/user-attachments/assets/7dbad99b-278e-4442-b695-a1ece39bef58" />
+
+**SSH Command:**
+
+► I checked the MySQL version to confirm that MySQL was installed successfully.
+
+```bash
+mysql -V
+```
+
+
 
 
 
