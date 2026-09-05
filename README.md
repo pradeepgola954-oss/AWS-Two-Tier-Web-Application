@@ -59,11 +59,17 @@ sudo -i
 
 **SSH Command:**
 
-► After logging in, I switched to the root user to get full administrative rights.
+► I downloaded the official MySQL repository file using the wget command.
 
 ```bash
-sudo -i
+wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 ```
+► Then, I installed the downloaded file to add MySQL to my system's software list.
+
+```bash
+dnf install mysql80-community-release-el9-1.noarch.rpm -y
+```
+
 
 
 
