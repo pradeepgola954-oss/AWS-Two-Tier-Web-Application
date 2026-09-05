@@ -89,6 +89,16 @@ rpm --import https://mysql.com
 dnf clean all
 rm -rf /var/cache/dnf
 ```
+# Step 5: Installing MySQL Server
+
+**SSH Command:**
+
+► Finally, I ran the install command to completely set up MySQL Server on my system.
+
+```bash
+dnf install mysql-community-server -y
+```
+
 
 
 
