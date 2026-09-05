@@ -43,8 +43,6 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 # Step 2: Connecting to the Server
 <img width="1920" height="1120" alt="CMD-1" src="https://github.com/user-attachments/assets/ff30c5c3-da67-476e-8f8f-02efdc1d92a9" />
 
-► Once the server was ready, I opened my terminal and connected to it using the SSH command.
-
 **SSH Command:**
 
 ► Once the server was ready, I opened my terminal and connected to it using the SSH command.
@@ -55,6 +53,17 @@ ssh -i "Linux-key-pair.pem" ec2-user@<PUBLIC-IP>
 
 # Step 2: Connecting to the Server
 <img width="1920" height="1080" alt="CMD-2" src="https://github.com/user-attachments/assets/1f6b1bd4-4ab5-464d-84d5-7b75a6fdef52" />
+
+**SSH Command:**
+
+► After logging in, I switched to the root user to get full administrative rights.
+
+```bash
+sudo -i
+```
+
+
+
 
 
 
