@@ -200,6 +200,26 @@ SSH (Port 22): The source was restricted to My IP, ensuring that SSH access is l
 
 ► Finally, I reviewed the configuration and clicked Create security group.
 
+**2. Configuring the Database Server Security Group (Database-Server-SG)**
+
+<img width="1920" height="1080" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/84753289-6989-48b3-b82a-aaa3e1aec481" />
+
+<img width="1920" height="1080" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/0b2e5c48-54fb-468c-a579-f80e0297ac16" />
+
+►  I created a separate backend security group named Database-Server-SG with the description Secure-Database-Server-SG and associated it with the same VPC.
+
+► For the Inbound rules, I implemented strict tier-to-tier access control:
+
+MySQL/Aurora (Port 3306): The source was configured as Custom, and I selected the Web-Server-SG security group ID (sg-065765a4f4700a23). This allows MySQL traffic only from resources associated with the web server security group instead of exposing the database port directly to the internet.
+SSH (Port 22): The source was restricted to My IP, allowing only my local computer to connect to the database server for administrative management.
+
+► Finally, I reviewed the configuration and clicked Create security group, establishing a secure network-security foundation for the project.
+
+
+
+
+
+
 
 
 
