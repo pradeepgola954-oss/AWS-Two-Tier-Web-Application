@@ -27,7 +27,25 @@ SHOW GRANTS FOR 'Prince'@'%';
 SELECT * FROM guestbook;
 ```
  # Deployment Guide: AWS Two-Tier Web Application
+ 
  **Phase 1: Launching the Frontend Web Server**
+ 
 <img width="1920" height="1080" alt="Web-Server-1" src="https://github.com/user-attachments/assets/540af658-bdcd-4c39-8c00-23a75c857064" />
+
 <img width="1920" height="1080" alt="Web-Server-2" src="https://github.com/user-attachments/assets/3d278a73-a108-42c7-bbd6-b8c4ac48e9d3" />
+
+► I opened the **EC2 Dashboard** in the AWS Management Console and clicked **“Launch Instance.”**
+
+► I named the instance **“Web-Server”** so it could be easily identified as the frontend server.
+
+► I selected **Amazon Linux 2023 AMI** as the operating system for the server.
+
+► I chose **t3.micro** as the instance type to keep the project cost-effective.
+
+► For secure SSH access, I selected the existing **“Linux-Key-pair.”**
+
+► In the network settings, I selected the **default VPC** and attached the existing **“Web-Server-SG”** security group.
+
+► After reviewing all the settings, I clicked **“Launch Instance”** to create and start the web server.
+
 
