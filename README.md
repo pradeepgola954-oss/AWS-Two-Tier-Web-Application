@@ -47,12 +47,12 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 
 **SSH Command:**
 
+► Once the server was ready, I opened my terminal and connected to it using the SSH command.
+
 ```bash
 ssh -i "Linux-key-pair.pem" ec2-user@<PUBLIC-IP>
 
-► After logging in, I switched to the root user to get full administrative rights.
 
-*** sudo -i
 
 
 
