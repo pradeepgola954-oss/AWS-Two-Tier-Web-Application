@@ -179,6 +179,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </html>
 ```
 
+## Step 20 : Configuring Network Security Groups ##
+
+**1. Configuring the Web Server Security Group (Web-Server-SG)**
+
+<img width="1920" height="1080" alt="1 SG" src="https://github.com/user-attachments/assets/833f8297-562a-42c1-9449-2f78d9af1471" />
+
+<img width="1920" height="1080" alt="2 SG" src="https://github.com/user-attachments/assets/23434756-5340-48c4-83f2-bf3dc189b44f" />
+
+► First, I navigated to the EC2 Dashboard, selected Security Groups, and clicked Create security group.
+
+► I created a security group named Web-Server-SG with the description Secure-Web-Server-SG and associated it with my project VPC.
+
+► Under Inbound rules, I configured the following rules to secure the web server:
+
+HTTP (Port 80): The source was set to Anywhere-IPv4 (0.0.0.0/0), allowing users from the internet to access the website.
+SSH (Port 22): The source was restricted to My IP, ensuring that SSH access is limited to my local computer.
+
+► Under Outbound rules, I allowed all outbound traffic so that the web server could communicate with the required external and backend services.
+
+► Finally, I reviewed the configuration and clicked Create security group.
+
+
+
 
 
 
