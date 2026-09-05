@@ -132,6 +132,15 @@ tail /var/log/mysqld.log
 ```bash
 mysql -u root -p
 ```
+# tep 9: Changing the Root Password
+
+► After logging in, I changed the temporary root password to my own secure password.
+
+**SSH Command:**
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Pradeep@123';
+```
+
 
 
 
