@@ -28,3 +28,6 @@ SELECT * FROM guestbook;
 ```
  # Deployment Guide: AWS Two-Tier Web Application
  **Phase 1: Launching the Frontend Web Server**
+<img width="1920" height="1080" alt="Web-Server-1" src="https://github.com/user-attachments/assets/540af658-bdcd-4c39-8c00-23a75c857064" />
+<img width="1920" height="1080" alt="Web-Server-2" src="https://github.com/user-attachments/assets/3d278a73-a108-42c7-bbd6-b8c4ac48e9d3" />
+
