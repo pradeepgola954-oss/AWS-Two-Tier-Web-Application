@@ -140,6 +140,24 @@ mysql -u root -p
 ```bash
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Pradeep@123';
 ```
+# Step 10: Creating a Database and a Table
+
+► I created a new database called myDatabase and switched to it.
+
+**SSH Command:**
+```bash
+CREATE DATABASE myDatabase;
+USE myDatabase;
+```
+► I created a guestbook table to store user messages and give each message a unique ID.
+```bash
+CREATE TABLE guestbook (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL
+);
+```
+
 
 
 
