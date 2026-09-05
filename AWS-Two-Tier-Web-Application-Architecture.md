@@ -15,3 +15,14 @@ GRANT ALL PRIVILEGES ON myDatabase.* TO 'Prince'@'%';
 FLUSH PRIVILEGES;
 ```
 # Step 12: Verifying Permissions and Table Status
+
+► I checked the new user's permissions to make sure everything was set up correctly.
+
+```bash
+SHOW GRANTS FOR 'Prince'@'%';
+```
+► Finally, I ran a test query to make sure the guestbook table was ready to store data.
+
+```bash
+SELECT * FROM guestbook;
+```
