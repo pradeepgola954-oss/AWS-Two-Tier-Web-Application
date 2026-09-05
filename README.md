@@ -108,6 +108,20 @@ dnf install mysql-community-server -y
 ```bash
 mysql -V
 ```
+# Step 7: Starting the MySQL Service
+<img width="1920" height="1080" alt="CMD-4" src="https://github.com/user-attachments/assets/795789c1-bcc1-465f-bf5e-37da30d6d183" />
+
+**SSH Command:**
+
+► I started the MySQL service and checked its status to make sure it was running.
+
+```bash
+systemctl start mysqld
+systemctl status mysqld
+```
+
+
+
 
 
 
