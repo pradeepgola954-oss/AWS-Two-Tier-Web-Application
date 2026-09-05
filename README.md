@@ -21,3 +21,24 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 .To understand the benefits of separating the web server and database server in a real-world cloud environment.
 
 .To gain practical experience in AWS EC2, Apache, PHP, MySQL, networking, and database connectivity.
+
+# Step 1: Create the Database Server EC2 Instance
+
+<img width="1920" height="1080" alt="Database-Server-1" src="https://github.com/user-attachments/assets/5773cf45-f5b7-4af8-89a2-323110db2d35" />
+
+<img width="1920" height="1080" alt="Database-Server-2" src="https://github.com/user-attachments/assets/cf2139da-02c6-4d9e-868d-b9dfe60762e4" />
+
+► First, I went to the EC2 Dashboard in the AWS Management Console and clicked on ‘Launch Instance’.
+
+► Then, I gave the instance a name, ‘Database-Server’, so that I could easily identify it.
+
+► I selected Amazon Linux 2023 AMI as the operating system.
+
+► For the instance type, I selected t3.micro, which is suitable for this project and helps reduce costs.
+
+► I selected the ‘Key-Pair-Project’ key pair for secure SSH access.
+
+► Finally, I selected my project VPC, configured the required subnet, selected ‘Database-Server-SG’, and clicked ‘Launch instance’.
+
+
+
