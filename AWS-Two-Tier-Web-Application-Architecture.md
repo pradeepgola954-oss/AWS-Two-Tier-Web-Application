@@ -87,7 +87,7 @@ php -v
 ```bash
 dnf install php8.1-mysqlnd.x86_64 -y
 ```
-## Step 5: Managing Application Services ##
+## Step 16: Managing Application Services ##
 
 ► Next, I started the PHP-FPM service and checked its status to confirm that it was running properly.
 
@@ -103,6 +103,17 @@ systemctl status php-fpm
 systemctl start httpd
 systemctl enable httpd
 ```
+## Step 17: Preparing the Database Test File ##
+
+<img width="1920" height="1080" alt="Web-Server-CMD-8" src="https://github.com/user-attachments/assets/e64b908e-bbb7-4df1-b6d8-8d79fe717aa9" />
+
+► Finally, I navigated to the web server’s root directory and used the vi text editor to create a file named dbtest.php for testing the database connection.
+
+```bash
+cd /var/html/
+vi dbtest.php
+```
+
 
 
 
