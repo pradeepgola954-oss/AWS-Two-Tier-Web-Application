@@ -50,8 +50,11 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 ```bash
 ssh -i "Linux-key-pair.pem" ec2-user@<PUBLIC-IP>
 ```
+```bash
+sudo -i
+```
 
-# Step 2: Connecting to the Server
+# Step 3: Downloading MySQL Repository
 <img width="1920" height="1080" alt="CMD-2" src="https://github.com/user-attachments/assets/1f6b1bd4-4ab5-464d-84d5-7b75a6fdef52" />
 
 **SSH Command:**
