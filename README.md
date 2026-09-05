@@ -69,6 +69,27 @@ wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 ```bash
 dnf install mysql80-community-release-el9-1.noarch.rpm -y
 ```
+# Step 4: Refreshing System Cache
+
+**SSH Command:**
+
+► I checked if the MySQL repository was successfully enabled on my server.
+
+```bash
+dnf repolist enabled | grep "mysql.*-community.*"
+```
+► I imported the official MySQL security key to ensure a safe installation.
+
+```bash
+rpm --import https://mysql.com
+```
+► I cleared the system cache to remove any old files and prevent errors.
+
+```bash
+dnf clean all
+rm -rf /var/cache/dnf
+```
+
 
 
 
