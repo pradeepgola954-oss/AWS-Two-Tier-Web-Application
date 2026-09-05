@@ -45,7 +45,10 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 
 ► Once the server was ready, I opened my terminal and connected to it using the SSH command.
 
-*** ssh -i "Linux-key-pair.pem" ec2-user@100.53.187.42
+**SSH Command:**
+
+```bash
+ssh -i "Linux-key-pair.pem" ec2-user@<PUBLIC-IP>
 
 ► After logging in, I switched to the root user to get full administrative rights.
 
