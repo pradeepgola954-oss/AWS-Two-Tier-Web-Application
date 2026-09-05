@@ -113,6 +113,24 @@ systemctl enable httpd
 cd /var/html/
 vi dbtest.php
 ```
+## Step 7: Configuring Database Connection (dbtest.php) ##
+
+<img width="1920" height="1080" alt="Web-Server-CMD-9" src="https://github.com/user-attachments/assets/91b65c71-b811-4c47-bf18-b6657e9f1c7c" />
+
+► Inside the /var/www/html/ directory, I created a dbtest.php file containing the required configuration to connect the frontend application to the MySQL database using PDO.
+
+```bash
+<?php
+$servername = "172.31.12.178";
+$username = "love";
+$password = "Pradeep@123";
+$database = "myDatabase";
+
+$pdo = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+?>
+```
+
 
 
 
