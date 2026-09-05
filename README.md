@@ -52,12 +52,14 @@ A two-tier web application deployed on AWS using separate EC2 instances for the 
 ```bash
 ssh -i "Linux-key-pair.pem" ec2-user@<PUBLIC-IP>
 
-<img width="1920" height="1080" alt="CMD-2" src="https://github.com/user-attachments/assets/b01d88d9-2762-4c0e-b577-026926f9e327" />
+```<img width="1920" height="1080" alt="CMD-2" src="https://github.com/user-attachments/assets/b01d88d9-2762-4c0e-b577-026926f9e327" />
 
 ► After logging in, I switched to the root user to get full administrative rights.
 
 **SSH Command:**
+
 ```bash
+
 sudo -i
 
 
